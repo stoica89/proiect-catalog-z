@@ -1,0 +1,169 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+a {
+  text-decoration: none;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 50px;
+  align-items: center;
+  flex-wrap: wrap;
+  /* border: 1px solid black; */
+}
+.nav-left span {
+  font-size: 18px;
+  padding: 8px;
+  color: rgb(47, 155, 149);
+}
+.fa-film {
+  color: rgb(47, 155, 149);
+}
+.nav-right a {
+  font-size: 16px;
+  padding: 15px;
+  color: gray;
+}
+.search-bar {
+  height: 130px;
+  background-image: url(impressed-startled-excited-cute-redhead-female-receive-big-gift-shaping-large-object-product.jpg);
+  background-position: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.search-bar input {
+    font-size: 14px;
+    height: 35px;
+    padding: 10px 10px;
+    width: 280px;
+    color: rgb(47, 155, 149);
+    border: none;
+}
+::placeholder {
+    color: rgb(47, 155, 149);
+}
+.fa-magnifying-glass {
+    font-size: 12px;
+    background-color:rgb(12, 151, 93) ;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+}
+.container-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px 50px 20px 50px;
+}
+.container-title h2 {
+  color: rgb(47, 155, 149);
+  font-size: 20px;
+}
+.container-title p {
+  color: rgb(47, 155, 149);
+  font-size: 12px;
+}
+.container-title span {
+  border: 1px solid gray;
+  padding: 3px 12px;
+  font-size: 12px;
+  color: rgb(47, 155, 149);
+  background-color: rgb(243, 240, 240);
+}
+.container-photo {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 18px;
+  padding: 0px 50px 0px 50px;
+}
+/* .photos {
+  width: 230px;
+} */
+.photos img {
+  width: 300px;
+  height: 160px;
+}
+.photo-bottom {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: gray;
+  width: 300px;
+  padding: 5px 0px 10px 0px;
+}
+.btn {
+display: flex;
+justify-content: space-between;
+padding: 70px 50px;
+}
+.btn button {
+background-color: rgb(47, 155, 149);
+color: white;
+border: none;
+border-radius: 3px;
+font-size: 13px;
+cursor: pointer;
+}
+.btn-prev button{
+padding: 10px 20px;
+}
+.btn-current button {
+padding: 11px 12px;
+background-color: rgb(224, 213, 213);
+color: gray;
+margin-right: 5px;
+}
+.btn-next button {
+  padding: 10px 20px;
+}
+.btn :first-child {
+  background-color: rgb(47, 155, 149);
+  color: white;
+}
+
+@media (max-width: 650px) {
+  .nav-left span {
+    font-size: 14px;
+  }
+  .fa-film {
+    font-size: 20px;
+  }
+  .nav-right a {
+    font-size: 12px;
+  }
+  .search-bar input {
+    height: 25px;
+    width: 180px;
+  }
+  .fa-magnifying-glass {
+    font-size: 8px;
+    padding: 9px 20px;
+  }
+}
+@media (max-width:400px) {
+  .search-bar input {
+    height: 20px;
+    width: 120px;
+  }
+  .fa-magnifying-glass {
+    font-size: 6px;
+    padding: 7px 15px;
+  }
+  .container-title h2 {
+    font-size: 17px;
+  }
+  .container-title p {
+    font-size: 10px;
+  }
+  .container-title span {
+    font-size: 10px;
+  }
+}
+
