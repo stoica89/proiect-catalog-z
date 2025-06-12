@@ -165,5 +165,20 @@ margin-right: 5px;
   .container-title span {
     font-size: 10px;
   }
+ 
+}
+@media (max-width:500px) {
+ .btn button {
+    font-size: 10px;
+  }
+  .btn-prev button {
+    padding: 6px 15px;
+  }
+  .btn-current button {
+    padding: 8px 9px;
+  }
+  .btn-next button {
+    padding: 6px 15px;
+  }
 }
 
