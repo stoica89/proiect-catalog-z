@@ -127,6 +127,69 @@ margin-right: 5px;
   background-color: rgb(47, 155, 149);
   color: white;
 }
+footer {
+  background-color: rgb(214, 209, 209);
+  padding: 30px 250px;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  
+}
+.footer-top-about {
+  width: 300px;
+}
+.footer-top-about h3 {
+  color: rgb(47, 155, 149);
+  font-size: 16px;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+.footer-top-about p {
+  font-size: 13px;
+  color: rgb(83, 81, 81);
+}
+.footer-top-links {
+  display: flex;
+  flex-direction: column;
+}
+.footer-top-links h3 {
+  color: rgb(47, 155, 149);
+  font-size: 16px;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+.footer-top-links a {
+  color: rgb(83, 81, 81);
+  font-size: 13px;
+  padding-bottom: 5px;
+}
+.footer-icons a {
+  background-color: white;
+  color: rgb(83, 81, 81);
+  padding: 6px 6px;
+  margin-left: 8px;
+  font-size: 11px;
+}
+.footer-top-icons-terms {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  align-items: end;
+  padding: 50px 0px;
+}
+.footer-top-icons-terms a {
+  font-size: 13px;
+  color: rgb(83, 81, 81);
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-bottom {
+  font-size: 13px;
+  color:rgb(83, 81, 81) ;
+}
 
 @media (max-width: 650px) {
   .nav-left span {
