@@ -34,25 +34,24 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 .search-bar input {
-    font-size: 14px;
-    height: 35px;
-    padding: 10px 10px;
-    width: 280px;
-    color: rgb(47, 155, 149);
-    border: none;
+  font-size: 14px;
+  height: 35px;
+  padding: 10px 10px;
+  width: 280px;
+  color: rgb(47, 155, 149);
+  border: none;
 }
 ::placeholder {
-    color: rgb(47, 155, 149);
+  color: rgb(47, 155, 149);
 }
 .fa-magnifying-glass {
-    font-size: 12px;
-    background-color:rgb(12, 151, 93) ;
-    color: white;
-    padding: 12px 25px;
-    border: none;
+  font-size: 12px;
+  background-color: rgb(12, 151, 93);
+  color: white;
+  padding: 12px 25px;
+  border: none;
 }
 .container-title {
   display: flex;
@@ -79,7 +78,7 @@ nav {
 }
 .container-photo {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 18px;
   padding: 0px 50px 0px 50px;
 }
@@ -90,6 +89,10 @@ nav {
   width: 300px;
   height: 160px;
 }
+.photos img:hover {
+  border: 1px solid rgb(47, 155, 149);
+  background-color: blue;
+}
 .photo-bottom {
   display: flex;
   justify-content: space-between;
@@ -99,26 +102,32 @@ nav {
   padding: 5px 0px 10px 0px;
 }
 .btn {
-display: flex;
-justify-content: space-between;
-padding: 70px 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 50px;
+  flex-wrap: wrap;
 }
 .btn button {
-background-color: rgb(47, 155, 149);
-color: white;
-border: none;
-border-radius: 3px;
-font-size: 13px;
-cursor: pointer;
+  background-color: rgb(47, 155, 149);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-size: 13px;
+  cursor: pointer;
 }
-.btn-prev button{
-padding: 10px 20px;
+.btn-prev button {
+  padding: 10px 20px;
 }
 .btn-current button {
-padding: 11px 12px;
-background-color: rgb(224, 213, 213);
-color: gray;
-margin-right: 5px;
+  padding: 11px 12px;
+  background-color: rgb(224, 213, 213);
+  color: gray;
+  margin-right: 5px;
+}
+.btn-current button:hover {
+  background-color: rgb(47, 155, 149);
+  color: white;
+  transition: 1s;
 }
 .btn-next button {
   padding: 10px 20px;
@@ -129,12 +138,13 @@ margin-right: 5px;
 }
 footer {
   background-color: rgb(214, 209, 209);
-  padding: 30px 250px;
+  padding: 40px 0px;
 }
 .footer-top {
   display: flex;
-  justify-content: space-between;
-  
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
 }
 .footer-top-about {
   width: 300px;
@@ -148,6 +158,7 @@ footer {
 .footer-top-about p {
   font-size: 13px;
   color: rgb(83, 81, 81);
+  text-align: left;
 }
 .footer-top-links {
   display: flex;
@@ -171,6 +182,10 @@ footer {
   margin-left: 8px;
   font-size: 11px;
 }
+.footer-icons a:hover {
+  background-color: rgb(47, 155, 149);
+  color: white;
+}
 .footer-top-icons-terms {
   display: flex;
   flex-direction: column;
@@ -184,11 +199,13 @@ footer {
 }
 .footer-bottom {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 180px;
+  flex-wrap: wrap;
 }
-.footer-bottom {
+.footer-bottom p {
   font-size: 13px;
-  color:rgb(83, 81, 81) ;
+  color: rgb(83, 81, 81);
 }
 
 @media (max-width: 650px) {
@@ -210,7 +227,7 @@ footer {
     padding: 9px 20px;
   }
 }
-@media (max-width:400px) {
+@media (max-width: 400px) {
   .search-bar input {
     height: 20px;
     width: 120px;
@@ -228,10 +245,9 @@ footer {
   .container-title span {
     font-size: 10px;
   }
- 
 }
-@media (max-width:500px) {
- .btn button {
+@media (max-width: 500px) {
+  .btn button {
     font-size: 10px;
   }
   .btn-prev button {
@@ -244,4 +260,3 @@ footer {
     padding: 6px 15px;
   }
 }
-
